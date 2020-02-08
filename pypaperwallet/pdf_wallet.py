@@ -43,10 +43,9 @@ def thunk_lbl(src, target, html):
 
 def mk_wallet(filename):
     mnemo = Mnemonic("english")
-    # code = mnemo.to_mnemonic(unhexlify('0660cc198330660cc198330660cc1983'))
-    code = "all all all all all all all all all all all all"
+    # code = "all all all all all all all all all all all all"
     
-    # code = mnemo.generate()
+    code = mnemo.generate()
     seed = mnemo.to_seed(code)
     root = btc.keys.bip32_seed(seed)
     xpub = root.hwif(as_private=False)
