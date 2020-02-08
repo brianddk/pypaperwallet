@@ -95,7 +95,7 @@ def bitaddress():
 </html>
 """
 
-def disclosure():
+def political_disclosure():
     return """
 <!doctype html>
 <html lang="en">

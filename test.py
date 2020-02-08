@@ -5,9 +5,9 @@
 # [tipjar]  https://gist.github.com/brianddk/3ec16fbf1d008ea290b0
 
 from pypaperwallet.pdf_wallet import mk_wallet, write_pdf
-from pypaperwallet.template import disclosure
+from pypaperwallet.template import political_disclosure
 
 mk_wallet('wallet.pdf')
 
 # For political contributions, generate disclosure form
-write_pdf(disclosure(), 'disclosure.pdf')
+write_pdf(political_disclosure(), 'disclosure.pdf')

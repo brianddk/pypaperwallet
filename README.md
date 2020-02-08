@@ -32,11 +32,28 @@ from pypaperwallet.template import disclosure
 mk_wallet('wallet.pdf')
 
 # For political contributions, generate disclosure form
-write_pdf(disclosure(), 'disclosure.pdf')
+write_pdf(political_disclosure(), 'disclosure.pdf')
 ```
 
 PGP Key: [Reddit](https://www.reddit.com/user/brianddk/comments/aojt4u/brianddk_gpg_public_key/), [Website](https://brianddk.github.io/darkweb/brianddk/pub.asc), [SKS Keyserver](https://sks-keyservers.net/pks/lookup?op=get&search=0x6285FA08FB67B72BE4DA4184835F0433A6D51860)
 
 ```
 6285 FA08 FB67 B72B E4DA  4184 835F 0433 A6D5 1860
+```
+
+Verifying package and install
+
+```shell
+version="0.2"
+package="pypaperwallet-${version}.tar.gz"
+root_url="https://github.com/brianddk/pypaperwallet"
+wget https://brianddk.github.io/darkweb/brianddk/pub.asc -O brianddk.asc
+gpg2 --import brianddk.asc
+wget "${root_url}/releases/download/v${version}/${package}.sig"
+wget "${root_url}/archive/v${version}.tar.gz" -O "${package}"
+gpg2 --verifiy "${package}.sig"
+
+# Ensure the fingerprint matches the one above
+
+python37 -m pip install "${package}"
 ```
