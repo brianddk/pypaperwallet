@@ -26,7 +26,17 @@ pacman -S mingw-w64-x86_64-gtk3
 
 From Python 3.7 run:
 ```python
-from pypaperwallet.pdf_wallet import mk_wallet
+from pypaperwallet.pdf_wallet import mk_wallet, write_pdf
+from pypaperwallet.template import disclosure
 
 mk_wallet('wallet.pdf')
+
+# For political contributions, generate disclosure form
+write_pdf(disclosure(), 'disclosure.pdf')
+```
+
+PGP Key: [Reddit](https://www.reddit.com/user/brianddk/comments/aojt4u/brianddk_gpg_public_key/), [Website](https://brianddk.github.io/darkweb/brianddk/pub.asc), [SKS Keyserver](https://sks-keyservers.net/pks/lookup?op=get&search=0x6285FA08FB67B72BE4DA4184835F0433A6D51860)
+
+```
+6285 FA08 FB67 B72B E4DA  4184 835F 0433 A6D5 1860
 ```

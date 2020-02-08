@@ -95,6 +95,51 @@ def bitaddress():
 </html>
 """
 
+def disclosure():
+    return """
+<!doctype html>
+<html lang="en">
+
+<head>
+  <title>github / brianddk / pypaperwallet</title>
+  <meta charset="utf-8">
+</head>
+
+<body>
+  <div id="main">
+    <div id="wallets">
+      <div id="singlearea" class="walletarea">
+        <div class="body">
+          <table>
+            <tr>
+              <td>
+                <div id="singlesafety">
+                  <center><h1>Political Contribution Disclosure</h1></center>
+                  <br/><p><b>Instructions: </b> For contributions valued below $200 the personal information below may be omitted.  In these cases please fill in "N/A" for information you wish to withhold.  Please ensure you <b>DO</b> fill out the estimated USD value of your contribution and ensure you sign the form below.</p>
+                  <br/><p><b>Name:</b> _____________________________________________________________________________________</p>
+                  <br/><p><b>Address:</b> ___________________________________________________________________________________</p>
+                  <br/></p><p><b>City:</b> _______________________________________________ <b>State:</b> ___________ <b>Zip:</b> _________________</p>
+                  <br/><p><b>Employer:</b> _________________________________________________________________________________</p>
+                  <br/><p><b>Occupation:</b> ________________________________________________________________________________</p>
+                  <p><b>*</b> Note: The above information is only required for contributions valued over $200 and may be omitted for contributions of smaller value</p>
+                  <br/><p>An individual may contribute up to $2,800 per election, with the primary and general treated as separate elections. By submitting this contribution, I agree that the first $2,800 of a contribution will be designated for the primary election, and any additional amount up to $2,800 will be designated for the general election. For contributions made after the primary, the full amount of the contribution, up to $2,800, will be designated for the general election.</p>
+                  <p>This contribution does not originate from PACs of any kind or federally-registered lobbyists.</p>
+                  <p>Federal law prohibits corporations, labor unions, federal contractors and foreign nationals, except lawfully admitted permanent residents of the U.S., from contributing to political campains. By signing here, I certify that I am at least 18 years old, I am a U.S. citizen or lawfully admitted permanent resident of the U.S., and the funds I am donating are not being provided to me by another person or entity for the purpose of making this contribution. </p>
+                  <br/><br/><br/><br/><p><b>Signature:</b> ________________________________________________________________________________</p>
+                  <br/><br/><p><b>Contribution Estimated USD Value:</b> ___________________________________________________________</p>
+                </div>
+              </td>
+            </tr>
+          </table>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+
+</html>
+"""
+
 def style():
     return """
 .more { background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABEAAAARCAYAAAA7bUf6AAAABHNCSVQICAgIfAhkiAAAAAlwSFlzAAALEgAACxIB0t1+/AAAABx0RVh0U29mdHdhcmUAQWRvYmUgRmlyZXdvcmtzIENTNXG14zYAAAAWdEVYdENyZWF0aW9uIFRpbWUAMDEvMDIvMTLltnQyAAAB1UlEQVQ4jYWTS04bQRCGv3q0x8gMYJCwknCGLDgLVwiH4grhLFaUXdhkQ0A8pBg/FOLpnmbhMYzxRKlNS1Vdf/31V5XknGnb+eXJCBjzbzu9OLu+azu845Opysej4wHmshF4uJ2TUrb3CV0gIBAKRboC5C2vdkDE9fdty6/xDegvXz+NgDbFUejZ+PjDgExmtpxS9vYwMe5u5iyX8RRoa5Ic+C4qx9KUN1MGu4E618yqJ5axAp44KA7ZL3eYzp/HKdVIw7WK8d6BuDvcod9TQlBEIOXEdPlElSoUJabIIs4Z7h9yNDwgqOMayLXw7epHVIBggrsgspZPUBQyiCgugRQji7TAVDF1XB2TlQoOYCqovkmpopS9fcoiM3ue0rOCYf8IU8NklWxiiOQ3EPXtWagIqo6KYWYEc4IGvMViA6RrnCJKVS9B8ypRHG1YKNa0Ur+C+MPt/I2BKWVZUO4FgvQ47PcptEDF+T2Z8TiZUMWIyGtpd+Bze5VTSqP57O/4YG+AN/RXbSiPkwmL5z/be/L+mM4vT2JKeUW7EXD1erMz/Lo4u77f0K9DDhdA1XG11jh9vWBb99Z9gAg5QZ2hzpmUa0RSW4f/gqSY0s3Vz+tufEjvHS8Tg6BXC7qVbQAAAABJRU5ErkJggg==)
