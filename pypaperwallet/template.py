@@ -25,7 +25,7 @@ def bitaddress():
                 <div id="keyarea" class="keyarea">
                   <div class="public">
                     <div class="pubaddress">
-                      <span class="label" id="singlelabelbitcoinaddress">Bitcoin Address</span>
+                      <span class="label" id="singlelabelbitcoinaddress">Bitcoin Address (m/44'/0'/0'/0/0)</span>
                     </div>
                     <div id="qrcode_public" class="qrcode_public">
                       <img alt="spec" width="1320" height="1320" style="width: 132px; height: 132px;" src="pub.png" />

@@ -19,4 +19,4 @@
 
 from pypaperwallet.pdf_wallet import mk_wallet
 
-mk_wallet('test.pdf')
+mk_wallet('sample.pdf')
