@@ -12,7 +12,7 @@ Python Paper Wallet based on github/pointbiz/bitaddress.org
 To install `choco` see the [Chocolatey install page](https://chocolatey.org/install)
 
 From Windows shell run:
-```shell
+```bash
 choco install python --version=3.7.1
 choco install -y MSYS2
 refreshenv.cmd
@@ -20,7 +20,7 @@ pip install pypaperwallet WeasyPrint mnemoic qrcode[pil] pycoin
 ```
 
 From MSYS2 shell run:
-```shell
+```bash
 pacman -S mingw-w64-x86_64-gtk3
 ```
 
@@ -41,19 +41,12 @@ PGP Key: [Reddit](https://www.reddit.com/user/brianddk/comments/aojt4u/brianddk_
 6285 FA08 FB67 B72B E4DA  4184 835F 0433 A6D5 1860
 ```
 
-Verifying package and install
+Verifying package and execute
 
-```shell
-version="0.2"
-package="pypaperwallet-${version}.tar.gz"
-root_url="https://github.com/brianddk/pypaperwallet"
-wget https://brianddk.github.io/darkweb/brianddk/pub.asc -O brianddk.asc
-gpg2 --import brianddk.asc
-wget "${root_url}/releases/download/v${version}/${package}.sig"
-wget "${root_url}/archive/v${version}.tar.gz" -O "${package}"
-gpg2 --verifiy "${package}.sig"
-
-# Ensure the fingerprint matches the one above
-
-python37 -m pip install "${package}"
-```
+1. Find latest release at https://github.com/brianddk/pypaperwallet/releases
+2. Expand "Assets" and download the "Source code (tar.gz)" as `pypaperwallet.tar.gz`.
+3. Download the `*.tar.gz.sig` file naming it `pypaperwallet.tar.gz.sig`
+4. Use the GPG command `gpg --verify *.tar.gz.sig` to verify the download
+5. Extract the contents of the `.zip` or `.tar.gz` file to any directory
+6. Modify `test.py` to your liking and run from python 3.7 to produce the PDFs.
+7. To change wording, modify the contents of `template.py`
